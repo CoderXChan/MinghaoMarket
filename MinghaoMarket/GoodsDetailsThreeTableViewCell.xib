@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="goodsDetailsThreeCell" rowHeight="651" id="KGk-i7-Jjw" customClass="GoodsDetailsThreeTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="651"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="商品详情" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t8a-18-ZCN">
+                        <rect key="frame" x="8" y="8" width="68" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="b1" translatesAutoresizingMaskIntoConstraints="NO" id="VYk-Ku-tAg">
+                        <rect key="frame" x="30" y="37" width="540" height="613"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="t8a-18-ZCN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="3wE-dL-6lt"/>
+                    <constraint firstAttribute="bottom" secondItem="VYk-Ku-tAg" secondAttribute="bottom" id="UO5-3z-64L"/>
+                    <constraint firstItem="t8a-18-ZCN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="byM-My-sAp"/>
+                    <constraint firstItem="VYk-Ku-tAg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="30" id="mcj-R9-tII"/>
+                    <constraint firstItem="VYk-Ku-tAg" firstAttribute="top" secondItem="t8a-18-ZCN" secondAttribute="bottom" constant="8" id="ppf-W1-RXx"/>
+                    <constraint firstAttribute="trailing" secondItem="VYk-Ku-tAg" secondAttribute="trailing" constant="30" id="wRb-kE-gVl"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="goodsDetailsImage" destination="VYk-Ku-tAg" id="paH-qy-zgL"/>
+            </connections>
+            <point key="canvasLocation" x="421" y="565.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="b1" width="540" height="613"/>
+    </resources>
+</document>

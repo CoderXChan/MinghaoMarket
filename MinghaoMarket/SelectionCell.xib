@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" reuseIdentifier="SelectionCell" id="KGk-i7-Jjw" customClass="SelectionCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="30"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fxN-9U-1fo">
+                        <rect key="frame" x="0.0" y="2" width="1" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="1" id="n7F-uA-6Ji"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dn3-v3-Typ">
+                        <rect key="frame" x="3" y="2" width="317" height="25"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="fxN-9U-1fo" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="2" id="HJE-iB-Uvo"/>
+                    <constraint firstAttribute="bottom" secondItem="fxN-9U-1fo" secondAttribute="bottom" constant="2" id="MRJ-eb-SDW"/>
+                    <constraint firstAttribute="bottom" secondItem="dn3-v3-Typ" secondAttribute="bottom" constant="2" id="PpX-hC-QHk"/>
+                    <constraint firstItem="dn3-v3-Typ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="2" id="QRR-nZ-axr"/>
+                    <constraint firstItem="fxN-9U-1fo" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="deh-hP-PQc"/>
+                    <constraint firstAttribute="trailing" secondItem="dn3-v3-Typ" secondAttribute="trailing" id="gcp-6V-aKJ"/>
+                    <constraint firstItem="dn3-v3-Typ" firstAttribute="leading" secondItem="fxN-9U-1fo" secondAttribute="trailing" constant="2" id="ny9-38-C3T"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="GoodsTypeId" destination="fxN-9U-1fo" id="Nwe-Up-KSp"/>
+                <outlet property="lb" destination="dn3-v3-Typ" id="9F1-i9-zkA"/>
+            </connections>
+            <point key="canvasLocation" x="358" y="465"/>
+        </tableViewCell>
+    </objects>
+</document>
